@@ -1,0 +1,15 @@
+Image Display Issue Analysis:
+
+The screenshot shows a broken image icon with alt text "PHASE 1: ENTRY & MACRO VISION" 
+displayed in the itinerary section. This indicates:
+
+1. The day.image field is being set to the day.title value instead of an actual image URL
+2. The seed script likely stored the title as the image field by mistake
+3. Need to either:
+   a. Remove the image field from days (since we don't have day-specific images)
+   b. Or set proper image URLs for each day
+
+Looking at the fix-cambodia.mjs script, I don't see any image field being set for days.
+The issue is that the database has incorrect data in the image column.
+
+Solution: Update the code to not show broken images, or fix the database data.

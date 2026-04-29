@@ -1,0 +1,19 @@
+CRITICAL CSS ISSUE FOUND:
+
+The main container has:
+- overflow: visible (should be hidden)
+- height: 1422.25px (should be 100vh/screen height)
+- position: static (should be relative)
+
+The carousel slides have:
+- All slides have opacity: 1 (should be 0 for non-active slides)
+- All slides have z-index: auto (should be z-10 for active, z-0 for inactive)
+
+ROOT CAUSE: Tailwind CSS classes are not being applied correctly. The classes like "h-screen", "overflow-hidden", "opacity-0", "z-10" are not working.
+
+This is likely because:
+1. Tailwind CSS is not properly configured
+2. The CSS is being overridden somewhere
+3. There's a conflict with the print styles
+
+SOLUTION: Need to check Tailwind configuration and ensure the utility classes are working.

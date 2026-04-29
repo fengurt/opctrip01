@@ -1,0 +1,34 @@
+# Project TODO
+
+- [x] Basic homepage layout with rolling carousel
+- [x] Trip detail page structure
+- [x] Navigation between pages
+- [x] Fix UI overlap issue on homepage
+- [x] Upgrade to full-stack (web-db-user)
+- [x] Design database schema for bilingual content (trips, days, activities, translations)
+- [x] Implement tRPC APIs for content CRUD operations
+- [x] Implement admin authentication check
+- [x] Create inline editing component for admin users
+- [x] Implement language toggle (Chinese/English)
+- [x] Migrate existing trip data to database with Chinese translations
+- [x] Test full workflow (login, edit, save, language switch)
+- [x] Fix Cambodia trip content to match original uploaded content exactly
+- [x] Fix nested <a> tag error in TripDetail page
+- [x] Fix image display issue in TripDetail page
+- [x] Add professional images for each day of each trip
+- [x] Fix print/export to show all days expanded, not collapsed
+- [x] Redesign print/export layout with beautiful professional styling
+- [x] Fix print layout formatting issues
+- [x] Change website name from "Manus 旅行集" to "OPC Trip Collection"
+- [x] Change logo from "M" to "O"
+- [x] CRITICAL: Fix broken homepage - restore rolling photo carousel with database content
+- [x] Add "Supported by OPC Global" footer with link to opcglobal.ai
+- [x] Research Cambodia investment advantages from contrarian "别人恐惧我贪婪" angle
+- [x] Redesign Cambodia PM Office trip itinerary with research findings
+- [x] Update trip content in database with new itinerary
+- [x] COMPREHENSIVE AUDIT: Review and fix all visual/UX/content issues across entire website
+- [x] Fix homepage design - apply elegant minimalist style (white, deep blue #0A1626, gold #A88B52)
+- [x] Fix trip detail page design - clean layout, proper typography, no overlapping
+- [x] Fix mobile responsiveness across all pages
+- [x] Ensure consistent font sizes and proper content display
+- [x] Fix Cambodia trip title - remove "别人恐惧我贪婪" (design logic, not display text), use professional title instead

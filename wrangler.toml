@@ -1,0 +1,24 @@
+# Cloudflare Pages + Workers Configuration
+name = "opctrip01"
+compatibility_date = "2024-04-01"
+
+# Pages configuration
+pages_build_output_dir = "dist/public"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "opctrip01"
+database_id = "${CLOUDFLARE_D1_DATABASE_ID}"
+
+# KV Namespace for sessions
+[[kv_namespaces]]
+binding = "SESSION_KV"
+id = "${CLOUDFLARE_SESSION_KV_ID}"
+
+# Environment variables passed to the worker
+[vars]
+NODE_ENV = "production"
+
+# Secrets to set via `wrangler secret put`:
+# JWT_SECRET, OAUTH_SERVER_URL, VITE_APP_ID, OWNER_OPEN_ID
